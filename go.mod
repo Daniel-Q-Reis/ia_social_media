@@ -1,4 +1,4 @@
-module github.com/evrone/go-clean-template
+module github.com/Daniel-Q-Reis/ia_social_media
 
 go 1.24
 

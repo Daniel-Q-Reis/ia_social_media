@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/evrone/go-clean-template/internal/entity"
-	"github.com/evrone/go-clean-template/internal/repo"
+	"github.com/Daniel-Q-Reis/ia_social_media/internal/entity"
+	"github.com/Daniel-Q-Reis/ia_social_media/internal/repo"
 )
 
 // UseCase -.

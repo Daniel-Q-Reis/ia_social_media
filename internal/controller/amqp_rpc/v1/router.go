@@ -1,9 +1,9 @@
 package v1
 
 import (
-	"github.com/evrone/go-clean-template/internal/usecase"
-	"github.com/evrone/go-clean-template/pkg/logger"
-	"github.com/evrone/go-clean-template/pkg/rabbitmq/rmq_rpc/server"
+	"github.com/Daniel-Q-Reis/ia_social_media/internal/usecase"
+	"github.com/Daniel-Q-Reis/ia_social_media/pkg/logger"
+	"github.com/Daniel-Q-Reis/ia_social_media/pkg/rabbitmq/rmq_rpc/server"
 	"github.com/go-playground/validator/v10"
 )
 

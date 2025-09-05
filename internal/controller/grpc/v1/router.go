@@ -1,9 +1,9 @@
 package v1
 
 import (
-	v1 "github.com/evrone/go-clean-template/docs/proto/v1"
-	"github.com/evrone/go-clean-template/internal/usecase"
-	"github.com/evrone/go-clean-template/pkg/logger"
+	v1 "github.com/Daniel-Q-Reis/ia_social_media/docs/proto/v1"
+	"github.com/Daniel-Q-Reis/ia_social_media/internal/usecase"
+	"github.com/Daniel-Q-Reis/ia_social_media/pkg/logger"
 	"github.com/go-playground/validator/v10"
 	pbgrpc "google.golang.org/grpc"
 )

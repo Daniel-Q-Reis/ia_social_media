@@ -4,13 +4,13 @@ package http
 import (
 	"net/http"
 
+	"github.com/Daniel-Q-Reis/ia_social_media/config"
+	_ "github.com/Daniel-Q-Reis/ia_social_media/docs" // Swagger docs.
+	"github.com/Daniel-Q-Reis/ia_social_media/internal/controller/http/middleware"
+	v1 "github.com/Daniel-Q-Reis/ia_social_media/internal/controller/http/v1"
+	"github.com/Daniel-Q-Reis/ia_social_media/internal/usecase"
+	"github.com/Daniel-Q-Reis/ia_social_media/pkg/logger"
 	"github.com/ansrivas/fiberprometheus/v2"
-	"github.com/evrone/go-clean-template/config"
-	_ "github.com/evrone/go-clean-template/docs" // Swagger docs.
-	"github.com/evrone/go-clean-template/internal/controller/http/middleware"
-	v1 "github.com/evrone/go-clean-template/internal/controller/http/v1"
-	"github.com/evrone/go-clean-template/internal/usecase"
-	"github.com/evrone/go-clean-template/pkg/logger"
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/swagger"
 )

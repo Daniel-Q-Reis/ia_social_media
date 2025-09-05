@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	translator "github.com/Conight/go-googletrans"
-	"github.com/evrone/go-clean-template/internal/entity"
+	"github.com/Daniel-Q-Reis/ia_social_media/internal/entity"
 )
 
 // TranslationWebAPI -.

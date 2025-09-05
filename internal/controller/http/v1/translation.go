@@ -3,8 +3,8 @@ package v1
 import (
 	"net/http"
 
-	"github.com/evrone/go-clean-template/internal/controller/http/v1/request"
-	"github.com/evrone/go-clean-template/internal/entity"
+	"github.com/Daniel-Q-Reis/ia_social_media/internal/controller/http/v1/request"
+	"github.com/Daniel-Q-Reis/ia_social_media/internal/entity"
 	"github.com/gofiber/fiber/v2"
 )
 

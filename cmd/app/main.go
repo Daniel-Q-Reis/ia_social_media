@@ -3,8 +3,8 @@ package main
 import (
 	"log"
 
-	"github.com/evrone/go-clean-template/config"
-	"github.com/evrone/go-clean-template/internal/app"
+	"github.com/Daniel-Q-Reis/ia_social_media/config"
+	"github.com/Daniel-Q-Reis/ia_social_media/internal/app"
 )
 
 func main() {
