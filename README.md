@@ -1,4 +1,65 @@
-# IA Social Media 🚀
+# 🚀 Go Clean API Template
+
+![Language](https://img.shields.io/badge/language-Go-blue.svg)
+![Architecture](https://img.shields.io/badge/architecture-Clean-orange)
+![License](https://img.shields.io/badge/license-MIT-green)
+
+## 📖 About This Template
+
+This repository is a production-ready starter kit for building robust and scalable RESTful APIs in Go, following the principles of **Clean Architecture**.
+
+It provides a solid foundation with a well-defined project structure, pre-configured tools, and essential features, allowing you to focus on business logic instead of boilerplate setup.
+
+### Features Included
+
+-   **Clean Architecture:** A clear separation of concerns between business rules and infrastructure.
+-   **Docker & Docker Compose:** Ready for containerization and easy local development setup.
+-   **Configuration Management:** Centralized configuration loading from environment variables (`.env`).
+-   **Logging:** Structured logging setup for better observability.
+-   **CI/CD Ready:** Includes a basic GitHub Actions workflow for automated testing.
+-   **Example Use Case:** A sample `translation` feature to demonstrate the architecture in practice.
+
+---
+
+## ✅ How to Use This Template
+
+After clicking the "Use this template" button and creating your new repository, follow this checklist to personalize your new project:
+
+### Step 1: Set Your Module Path
+This is the most critical step.
+
+-   [ ] **In `go.mod`:** Change the first line from `module github.com/Daniel-Q-Reis/ia_social_media` to your new repository's path (e.g., `module github.com/your-user/your-new-project`).
+-   [ ] **Project-wide:** Use your IDE's "Find and Replace in Files" feature to replace all occurrences of `github.com/Daniel-Q-Reis/ia_social_media` with your new module path.
+-   [ ] **In your terminal:** Run `go mod tidy` to synchronize the dependencies.
+
+### Step 2: Customize Configuration
+
+-   [ ] **Create `.env` file:** Rename `.env.example` to `.env`.
+-   [ ] **Update `.env`:** Fill in your database credentials, app settings, and other required environment variables.
+
+### Step 3: Update Project Documentation
+
+-   [ ] **`README.md`:** **Delete this entire guide** and write a new README specific to your project. A basic template is provided at the bottom of this file to get you started.
+-   [ ] **`LICENSE`:** Update the `[year]` and `[fullname]` in the `LICENSE` file with your own information.
+
+### Step 4: Clean Up Example Code
+This template comes with a sample `translation` use case. Once you understand the structure, you should remove it to start with a clean slate.
+
+-   [ ] **Delete example files:**
+    -   `internal/entity/translation.go`
+    -   `internal/usecase/translation.go`
+    -   `internal/controller/http/v1/translation.go`
+    -   *And any other related files.*
+-   [ ] **Update routers:** Remove the example routes from `internal/controller/http/v1/router.go`.
+
+---
+---
+
+## 📋 New Project README Template
+*(Copy the content below to start the new `README.md` for your project)*
+
+```markdown
+# [YOUR PROJECT NAME]
 
 ![Status: In Development](https://img.shields.io/badge/status-in--development-yellow)
 ![Language](https://img.shields.io/badge/language-Go-blue.svg)
@@ -6,90 +67,23 @@
 
 ## 📖 About The Project
 
-**IA Social Media** is a learning and portfolio project that explores the evolution and refactoring of a RESTful API for a social network. The original project, a functional Go API, serves as a foundation for a continuous improvement process, leveraging **Artificial Intelligence as an assistive tool** to optimize architecture, enhance code quality, and implement new features.
-
-The goal is to create a full-stack application, documenting the journey of transforming a functional piece of software into a robust, scalable, and modern application.
-
-## 🏛️ Project Structure
-
-The project is organized in a monorepo structure, containing two main applications:
-
--   **/api**: The application's backend, a RESTful API developed in Go that handles all business logic, users, authentication, and posts.
--   **/webapp**: The application's frontend, which will consume the data from the `/api` to provide an interactive user interface. (To be developed in the future).
+[A brief and clear description of what your project does.]
 
 ## ✨ Key Features
 
-### API (Backend)
-
--   [x] Full User CRUD
--   [x] User authentication with JWT
--   [x] Full Posts CRUD
--   [x] Follow/Unfollow user system
--   [x] Like/Unlike posts system
--   [🚧] **In Development:** User profile picture uploads
--   [💡] **Planned:** Comments on posts
+-   Feature 1
+-   Feature 2
+-   Feature 3
 
 ## 🛠️ Tech Stack
 
-### Backend (`/api`)
+-   Go
+-   PostgreSQL / MySQL
+-   Docker
+-   ...
 
--   **Language:** [Go](https://golang.org/)
--   **Router:** [Gorilla/Mux](https://github.com/gorilla/mux)
--   **Database:** [MySQL](https://www.mysql.com/)
--   **Authentication:** [JWT (JSON Web Tokens)](https://jwt.io/)
--   **Environment Variables:** [GoDotEnv](https://github.com/joho/godotenv)
+## 🚀 Getting Started
 
-### Frontend (`/webapp`)
+[Instructions on how to set up and run your project locally.]
 
--   *(To be defined - e.g., React, Vue, Angular)*
-
-## 🚀 Getting Started (API)
-
-To get the backend up and running on your local machine, follow these steps.
-
-### Prerequisites
-
--   [Go](https://golang.org/dl/) (version 1.18 or higher)
--   [MySQL](https://dev.mysql.com/downloads/installer/) or [Docker](https://www.docker.com/) with a MySQL image
--   An API client, such as [Postman](https://www.postman.com/) or [Insomnia](https://insomnia.rest/)
-
-### Installation & Running
-
-1.  **Clone the repository:**
-    ```bash
-    git clone [https://github.com/YOUR-USERNAME/ia_social_media.git](https://github.com/YOUR-USERNAME/ia_social_media.git)
-    cd ia_social_media/api
-    ```
-
-2.  **Set up environment variables:**
-    -   Rename the `.env.example` file to `.env`.
-    -   Open the `.env` file and fill in your database credentials and a `SECRET_KEY` for JWT.
-    ```env
-    API_PORT=5000
-    DB_USER=root
-    DB_PASSWORD=your_password_here
-    DB_NAME=iasocialmedia
-    SECRET_KEY=your_super_secret_key_here
-    ```
-
-3.  **Create the database and tables:**
-    -   Run the SQL scripts located in the `/api/sql` folder in your MySQL database to create the required tables.
-
-4.  **Install dependencies and run the API:**
-    ```bash
-    go mod tidy
-    go run main.go
-    ```
-
-5.  You're all set! The API will be running on `http://localhost:5000`.
-
-## 🤝 Contributing
-
-This is a learning project, but contributions and suggestions are always welcome! If you find a bug or have an idea, feel free to open an *Issue*.
-
-## 📄 License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
----
-Made with ❤️ and a lot of code!
+```
